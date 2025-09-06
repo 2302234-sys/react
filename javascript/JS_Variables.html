@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Variables</h1>
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 5;
+let y = 6;
+let z = x + y;
+
+document.getElementById("demo").innerHTML = "The value of z is " + z;
+</script>
+
+<p id="demo1"></p>
+<script>
+const a = 5;
+const b = 6;
+const c = a + b;
+document.getElementById("demo1").innerHTML = "The value of c is " + c;
+</script>
+
+<p>In this example, price1, price2, and total are variables.</p>
+<p id="demo2"></p>
+<script>
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+document.getElementById("demo2").innerHTML = "The total is: " + total;
+</script> 
+
+<p>In this example, x, y, and z are variables.</p>
+<p id="demo3"></p>
+<script>
+var d = 5;
+var e = 6;
+var f = d + e;
+document.getElementById("demo3").innerHTML = "The value of e is " + e;
+</script>
+
+<p>In this example, x, y, and z are undeclared.</p>
+<p>They are automatically declared when first used.</p> 
+<p id="demo4"></p>
+
+<script>
+ax = 5;
+ay = 6;
+az = ax + ay;
+document.getElementById("demo4").innerHTML = "The value of az is " + az;
+
+</script>
+</body>
+</html>
