@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;           // Display x in the element
+
+var x; // Declare x
+</script>
+
+
+<p id="demo1"></p>
+
+<script>
+var a; // Declare a
+a = 5; // Assign 5 to a
+
+elem = document.getElementById("demo1"); // Find an element 
+elem.innerHTML = a;           // Display x in the element
+</script>
+
+<h2>JavaScript Hoisting</h2>
+<p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+<p id="demo2"></p>
+
+<script>
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo2").innerHTML = err;
+}
+</script>
+
+<p>With <b>const</b>, you cannot use a variable before it is declared.</p>
+<p>Try to remove the //.</p>
+
+<p id="demo3"></p>
+
+<script>
+carName = "Volvo";
+//const carName;
+document.getElementById("demo3").innerHTML = carName;
+</script>
+
+<p id="demo4"></p>
+
+<script>
+var b = 5; // Initialize b
+var c = 7; // Initialize c
+
+elem = document.getElementById("demo4"); // Find an element 
+elem.innerHTML = b + " " + c;       // Display b and c
+
+</script>
+
+<p id="demo5"></p>
+
+<script>
+var d = 5;  // Initialize d
+
+elem = document.getElementById("demo5");      // Find an element 
+elem.innerHTML = "d is " + d + " and e is " + e;  // Display d and e
+
+var e = 7;  // Initialize e
+</script>
+
+<p id="demo6"></p>
+
+<script>
+var f = 5; // Initialize f
+var g;   // Declare g
+
+elem = document.getElementById("demo6"); // Find an element 
+elem.innerHTML = f + " " + g;       // Display f and g
+
+g= 7;   // Assign 7 to g
+
+</script>
+</body>
+</html> 
