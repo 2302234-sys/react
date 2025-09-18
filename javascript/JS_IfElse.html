@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript if</h1>
+
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+<p id="demo">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+</script>
+
+
+<h1>JavaScript if .. else</h1>
+
+<p>A time-based greeting:</p>
+
+<p id="demo1"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greetingA;
+
+if (hour < 18) {
+  greetingA = "Good day";
+} else {
+  greetingA = "Good evening";
+}
+
+document.getElementById("demo1").innerHTML = greetingA;
+</script>
+
+<p>A time-based greeting:</p>
+
+<p id="demo2"></p>
+
+<script>
+const time = new Date().getHours();
+let greetingB;
+if (time < 10) {
+  greetingB = "Good morning";
+} else if (time < 20) {
+  greetingB = "Good day";
+} else {
+  greetingB = "Good evening";
+}
+document.getElementById("demo2").innerHTML = greetingB;
+</script>
+
+<h2>JavaScript Math.random()</h2>
+
+<p id="demo3"></p>
+
+<script>
+let text;
+if (Math.random() < 0.5) {
+  text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+} else {
+  text = "<a href='https://wwf.org'>Visit WWF</a>";
+}
+document.getElementById("demo3").innerHTML = text;
+</script>
+
+</body>
+</html>
