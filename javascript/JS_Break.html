@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript break</h1>
+<h2>The break Statement in a Loop</h2>
+
+<p>Break the loop when the loop counter is 3:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+<h1>JavaScript break</h1>
+<h2>The break Statement in a Switch</h2>
+
+<p id="demo1"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo1").innerHTML = "Today is " + day;
+</script>
+
+<h2>The break Statement in a Loop</h2>
+
+<p>Break the loop when the loop counter is 3:</p>
+
+<p id="demo2"></p>
+
+<script>
+let textA = "";
+
+loop1: for (let j = 1; j < 5; j++) {
+  loop2: for (let i = 1; i < 5; i++) {
+    if (i === 3) { break loop1; }
+    textA += i + "<br>";
+  }
+}
+document.getElementById("demo2").innerHTML = textA;
+</script>
+
+<h2>The break Statement in a Loop</h2>
+
+<p>Break the loop when the loop counter is 3:</p>
+
+<p id="demo3"></p>
+
+<script>
+let textB = "";
+
+loop1: for (let j = 1; j < 5; j++) {
+  loop2: for (let i = 1; i < 5; i++) {
+    if (i === 3) { break loop2; }
+    textB += i + "<br>";
+  }
+}
+document.getElementById("demo3").innerHTML = textB;
+</script>
+<h2>JavaScript break</h2>
+
+<p id="demo4"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let textC = "";
+
+list: {
+  textC += cars[0] + "<br>"; 
+  textC += cars[1] + "<br>"; 
+  break list;
+  textC += cars[2] + "<br>"; 
+  textC += cars[3] + "<br>"; 
+}
+
+document.getElementById("demo4").innerHTML = text;
+</script>
+
+</body>
+</html>
