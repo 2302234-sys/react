@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+
+<p>Call a function to compute the product of p1 and p2 and return the result:</p>
+
+<p id="demo"></p>
+
+<script>
+// Function to compute the product of p1 and p2
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(4, 3);
+document.getElementById("demo").innerHTML = "The result is: " + result;
+</script>
+
+
+<h1>JavaScript if .. else</h1>
+
+<p>A time-based greeting:</p>
+
+<p id="demo1"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo1").innerHTML = greeting;
+</script>
+
+<h1>JavaScript Loops</h1>
+<h2>The for Loop</h2>
+
+<p id="demo2"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo2").innerHTML = text;
+</script>
+
+<h2>The While Loop</h2>
+
+<p id="demo3"></p>
+
+<script>
+let text1 = "";
+
+let i = 0;
+while (i < 10) {
+  text1 += "The number is " + i + "<br>";
+  i++;
+}
+
+document.getElementById("demo3").innerHTML = text1;
+</script>
+
+
+<h1>JavaScript Block Scope</h1>
+
+<p id="demo4"></p>
+
+<script>
+{
+  let x = 10;
+  // x is accessible here
+}
+
+// x is not accessible here
+document.getElementById("demo4").innerHTML = "x is " + typeof x;
+</script>
+
+<p id="demo5"></p>
+
+<script>
+{
+  let x = 10;
+  let y = 100;
+  let areal = x * y;
+  document.getElementById("demo5").innerHTML = "Areal is " + areal;
+}
+</script>
+
+
+</body>
+</html>
