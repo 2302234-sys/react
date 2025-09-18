@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Logical Operators</h1>
+<h2>The && (AND) Operator</h2>
+
+<p>The && operator returns true if both expressions are true, otherwise false:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 6;
+let y = 3;
+
+document.getElementById("demo").innerHTML = 
+(x < 10 && y > 1) + "<br>" +
+(x < 10 && y < 1);
+</script>
+
+<h2>The && (AND) Operator</h2>
+
+<p>The && operator returns true if both expressions are true, otherwise false:</p>
+
+<p id="demo1"></p>
+
+<script>
+let a = 6;
+let b = 3;
+
+document.getElementById("demo1").innerHTML = 
+(a < 10 && b > 1) + "<br>" +
+(a < 10 && b < 1);
+</script>
+
+<h2>The ! (NOT) Operator</h2>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo3").innerHTML = (5 == 8);
+document.getElementById("demo4").innerHTML = !(5 == 8);
+</script>
+
+<h2>The && (AND) Operator</h2>
+
+<p>The && operator returns true if both expressions are true, otherwise false:</p>
+
+<p id="demo5"></p>
+
+<script>
+let c = 6;
+let d = 3;
+
+document.getElementById("demo5").innerHTML = 
+(c < 10 && d > 1) + "<br>" +
+(c < 10 && d < 1);
+</script>
+
+<h2>The || (OR) Operator</h2>
+
+<p>The || operator returns true if one or both expressions are true, otherwise false:</p>
+
+<p id="demo6"></p>
+
+<script>
+let e = 6;
+let f = -3;
+let g = (e > 0 || f > 0);
+document.getElementById("demo6").innerHTML = z;
+</script>
+
+<h2>The ! (NOT) Operator</h2>
+
+<p id="demo7"></p>
+<p id="demo8"></p>
+
+<script>
+document.getElementById("demo7").innerHTML = (5 == 8);
+document.getElementById("demo8").innerHTML = !(5 == 8);
+</script>
+
+<h2>The ?? Operator</h2>
+
+<p>The ?? operator returns the first argument if it is not nullish (null or undefined). Otherwise it returns the second.</p>
+
+<p id="demo9"></p>
+
+<script>
+let name1 = null;
+let text = "missing";
+let result = name1 ?? text;
+
+document.getElementById("demo9").innerHTML = "The name is " + result; 
+</script>
+
+<h2>The () ? : (ternary) Operator</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo10"></p>
+
+<script>
+function myFunction() {
+  let age = document.getElementById("age").value;
+  let voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo10").innerHTML = voteable + " to vote.";
+}
+</script>
+
+<h2>The ?. (optional chaning) Operator</h2>
+<p>The ?. operator returns undefined if an object is undefined or null (instead of throwing an error).</p>
+
+<p>Car name is:</p>
+<p id="demo11"></p>
+
+<script>
+const car = {type:"Fiat", model:"500", color:"white"};
+let name = car?.name;
+document.getElementById("demo11").innerHTML = name;
+</script>
+
+</body>
+</html>
