@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+
+<script>
+const car = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = car;
+</script>
+
+<p id="demo1"></p>
+
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo1").innerHTML = cars;
+</script>
+
+
+<p id="demo2"></p>
+
+<script>
+const carA = [];
+carA[0]= "Saab";
+carA[1]= "Volvo";
+carA[2]= "BMW";
+document.getElementById("demo2").innerHTML = carA;
+</script>
+
+<p id="demo3"></p>
+
+<script>
+const carB = new Array("Saab", "Volvo", "BMW");
+document.getElementById("demo3").innerHTML = carB;
+</script>
+
+<h2>Bracket Indexing</h2>
+
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo4"></p>
+
+<script>
+const carC = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo4").innerHTML = carC[0];
+</script>
+
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo5"></p>
+
+<script>
+const carD = ["Saab", "Volvo", "BMW"];
+carD[0] = "Opel";
+document.getElementById("demo5").innerHTML = carD;
+</script>
+
+<h2>The toString() Method</h2>
+
+<p>The toString() method returns the elements of an array as a comma separated string:</p>
+
+<p id="demo6"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let myList = fruits.toString();
+document.getElementById("demo6").innerHTML = myList;
+</script>
+
+<p id="demo7"></p>
+
+<script>
+const carE = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo7").innerHTML = carE;
+</script>
+
+<p>Arrays use numbers to access its elements.</p>
+
+<p id="demo8"></p>
+
+<script>
+const person = ["John", "Doe", 46];
+document.getElementById("demo8").innerHTML = person[0];
+</script>
+
+<h1>JavaScript Objects</h1>
+
+<p>JavaScript uses names to access object properties.</p>
+<p id="demo9"></p>
+
+<script>
+const person1 = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("demo9").innerHTML = person1.firstName;
+</script>
+
+<h1>JavaScript Objects</h1>
+
+<p>JavaScript uses names to access object properties.</p>
+<p id="demo10"></p>
+
+<script>
+const person2 = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("demo10").innerHTML = person2.firstName;
+</script>
+
+<h2>Bracket Indexing</h2>
+
+<p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p>
+
+<p id="demo11"></p>
+
+<script>
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo11").innerHTML = fruits1[0];
+</script>
+
+<h2>Looping an Array</h2>
+
+<p id="demo12"></p>
+
+<script>
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits3.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits3[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo12").innerHTML = text;
+</script>
+
+<h1>JavaScript Arrays</h1>
+<h2>The push() Method</h2>
+
+<p>The push method appends a new element to an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo13"></p>
+
+<script>
+const fruits4 = ["Banana", "Orange", "Apple"];
+document.getElementById("demo13").innerHTML = fruits4;
+
+function myFunction() {
+  fruits4.push("Lemon");
+  document.getElementById("demo13").innerHTML = fruits4;
+}
+</script>
+
+<h1>JavaScript Arrays</h1>
+<h2>Nested JavaScript Objects and Arrays.</h2>
+
+<p id="demo14"></p>
+
+<script>
+let x = "";
+const myObj = {
+  name: "John",
+  age: 30,
+  car1: [
+    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    {name:"BMW", models:["320", "X3", "X5"]},
+    {name:"Fiat", models:["500", "Panda"]}
+  ]
+}
+
+for (let i in myObj.car1) {
+  x += "<h2>" + myObj.car1[i].name + "</h2>";
+  for (let j in myObj.car1[i].models) {
+    x += myObj.car1[i].models[j] + "<br>";
+  }
+}
+
+document.getElementById("demo14").innerHTML = x;
+</script>
+</body>
+</html>
