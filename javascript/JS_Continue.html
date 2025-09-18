@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Loops</h1>
+<h2>The continue Statement</h2>
+
+<p>Skip the iteration step when i equals 3.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i = 1; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += i*10 + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<h2>The continue Statement</h2>
+
+<p id="demo1"></p>
+
+<script>
+let textA = "";
+
+loop1: for (let j = 1; j < 5; j++) {
+  loop2: for (let i = 1; i < 5; i++) {
+    if (i === 3) { continue loop1; }
+    textA += i + "<br>";
+  }
+}
+document.getElementById("demo1").innerHTML = textA;
+</script>
+
+<h2>The continue Statement</h2>
+
+<p id="demo2"></p>
+
+<script>
+let textB = "";
+
+loop1: for (let j = 1; j < 5; j++) {
+  loop2: for (let i = 1; i < 5; i++) {
+    if (i === 3) { continue loop2; }
+    textB += i + "<br>";
+  }
+}
+
+document.getElementById("demo2").innerHTML = textB;
+</script>
+
+
+</body>
+</html>
