@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <body>
 <h1>JavaScript Functions</h1>
@@ -13,8 +13,8 @@ function myFunction(p1, p2) {
   return p1 * p2;
 }
 
-let result = myFunction(4, 3);
-document.getElementById("demo").innerHTML = "The result is: " + result;
+let resulta = myFunction(4, 3);
+document.getElementById("demo").innerHTML = "The result is: " + resulta;
 </script>
 
 <p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
@@ -38,8 +38,8 @@ document.getElementById("demo1").innerHTML = value;
 // myFunction computes the product of a and b
 let myFunction = function(a, b) {return a * b};
 
-let result = myFunction(4, 3);
-document.getElementById("demo2").innerHTML = "The product is: " + result;
+let resultb = myFunction(4, 3);
+document.getElementById("demo2").innerHTML = "The product is: " + resultb;
 </script>
 
 
@@ -53,23 +53,23 @@ document.getElementById("demo2").innerHTML = "The product is: " + result;
 // myFunction computes the product of a and b
 myFunction = (a, b) => a * b;
 
-let result = myFunction(4, 5);
-document.getElementById("demo3").innerHTML = "The product is: " + result
+let resultc = myFunction(4, 5);
+document.getElementById("demo3").innerHTML = "The product is: " + resultc;
 </script>
 
 <p>Outside myFunction() carName is undefined.</p>
 
-<p id="demo1"></p>
-<p id="demo2"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
 
 <script>
 let text = "Outside: " + typeof carName;
-document.getElementById("demo1").innerHTML = text;
+document.getElementById("demo4").innerHTML = text;
 
 function myFunction() {
   let carName = "Volvo";
   let text = "Inside: " + typeof carName + " " + carName; 
-  document.getElementById("demo2").innerHTML = text;
+  document.getElementById("demo5").innerHTML = text;
 }
 
 myFunction();
