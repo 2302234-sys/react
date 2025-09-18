@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Loops</h1>
+<h2>The for Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<h2>The for Loop</h2>
+
+<p id="demo1"></p>
+
+<script>
+let textA = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo1").innerHTML = textA;
+</script>
+
+<h1>JavaScript Scope</h1>
+<h2>Loop Scope</h2>
+
+<p id="demo2"></p>
+
+<script>
+let i = 5;
+
+for (i = 0; i < 10; i++) {
+  // some statements
+}
+
+document.getElementById("demo2").innerHTML = i;
+</script>
+
+<h2>Loop Scope</h2>
+
+<p id="demo3"></p>
+
+<script>
+let ia = 5;
+
+for (let ia = 0; ia < 10; ia++) {
+  // some statements
+}
+
+document.getElementById("demo3").innerHTML = ia;
+</script>
+
+<h1>JavaScript Loops</h1>
+<h2>The While Loop</h2>
+
+<p id="demo4"></p>
+
+<script>
+let textB = "";
+
+let iB = 0;
+while (i < 10) {
+  text += "The number is " + iB + "<br>";
+  iB++;
+}
+
+document.getElementById("demo4").innerHTML = textB;
+</script>
+<h2>JavaScript Do While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let textC = ""
+let ic = 0;
+
+do {
+  textC += "<br>The number is " + ic;
+  ic++;
+}
+while (ic < 10);  
+
+document.getElementById("demo").innerHTML = textC;
+</script>
+
+
+</body>
+</html>
