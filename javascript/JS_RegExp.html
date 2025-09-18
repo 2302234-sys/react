@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Regular Expressions</h1>
+
+<p>Search a string for "w3Schools", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Visit W3Schools!"; 
+let n = text.search(/w3Schools/i);
+document.getElementById("demo").innerHTML = n;
+</script>
+
+<h2>The match() Method</h2>
+
+<p>Search for "w3Schools" and display the first match:</p>
+
+<p id="demo1"></p>
+
+<script>
+let text1 = "Visit W3Schools!"; 
+const myArr = text1.match(/W3Schools/);
+
+document.getElementById("demo1").innerHTML = myArr;
+</script>
+
+<h2>The replace() Method</h2>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<p id="demo2">Please visit Microsoft!</p>
+
+<script>
+let text2 = document.getElementById("demo2").innerHTML;
+text2 = text2.replace(/Microsoft/, "W3Schools");
+
+document.getElementById("demo2").innerHTML = text2;
+</script>
+
+<h2>The search() Method</h2>
+
+<p>Search for "W3Schools" and display the position of the match:</p>
+
+<p id="demo3"></p>
+
+<script>
+let text3 = "Visit W3Schools!"; 
+let n3 = text3.search(/W3Schools/);
+
+document.getElementById("demo3").innerHTML = n3;
+</script>
+
+<h1>Regular Expressions</h1>
+<h2>RexExp Alteration (OR)</h2>
+<p>A global search for "red" or "green" or "blue":</p>
+
+<p id="demo4"></p>
+
+<script>
+let text4 = "Black, white, red, green, blue, yellow.";
+let result = text4.match(/red|green|blue/g);
+
+document.getElementById("demo4").innerHTML = result;
+</script>
+
+<h2>The /g Flag</h2>
+
+<p>A global search for "is" in a string:</p>
+
+<p id="demo5"></p>
+
+<script>
+let text5 = "Is this all there is?";
+const pattern = /is/g;
+
+let result5 = text5.match(pattern);
+
+document.getElementById("demo5").innerHTML = result5; 
+</script>
+
+<h2>The /i Flag</h2>
+
+<p>A case-insensitive search for "w3schools" in a string:</p>
+
+<p id="demo6"></p>
+
+<script>
+let text6 = "Visit W3Schools";
+const pattern6 = /w3schools/i;
+
+let result6 = text6.match(pattern6);
+
+document.getElementById("demo6").innerHTML = result6;
+</script>
+
+<h2>The \d Metacharacter</h2>
+
+<p>A global search for digits in a string:</p>
+
+<p id="demo7"></p>
+
+<script>
+let text7 = "Give 100%!";
+const pattern7 = /\d/g;
+
+let result7 = text7.match(pattern7);
+
+document.getElementById("demo7").innerHTML = result7;
+</script>
+
+<h2>The \w Metacharacter</h2>
+
+<p>A global search for word characters:</p>
+
+<p id="demo8"></p>
+
+<script>
+let text8 = "Give 100%!"; 
+const pattern8 = /\w/g;
+
+let result8 = text8.match(pattern8);
+
+document.getElementById("demo8").innerHTML = result8;
+</script>
+
+<h2>The ? Quantifier</h2>
+
+<p>A global search for a "1", followed by zero or one "0" characters:</p>
+
+<p id="demo9"></p>
+
+<script>
+let text9 = "1, 100 or 1000?";
+const pattern9 = /10?/g;
+
+let result9 = text9.match(pattern9);
+
+document.getElementById("demo9").innerHTML = result9;
+</script>
+
+<h2>The ^ Metacharacter</h2>
+
+<p>Test if a text starts with W3Schools:</p>
+
+<p id="demo10"></p>
+
+<script>
+const pattern10 = /^W3Schools/;
+let text10 = "W3Schools tutorial";
+let result10 = pattern10.test(text10);
+
+document.getElementById("demo10").innerHTML = result10;
+</script>
+
+<h2>The $ Metacharacter</h2>
+
+<p>Test if a text ends with with W3Schools:</p>
+
+<p id="demo11"></p>
+
+<script>
+const pattern11 = /W3Schools$/;
+let text11 = "Hello W3Schools";
+let result11 = pattern11.test(text11);
+
+document.getElementById("demo11").innerHTML = result11;
+</script>
+
+<h2>Using [] to find a range of characters</h2>
+
+<p>A global search for the characters 0 to 9 in a string:</p>
+
+<p id="demo12"></p>
+
+<script>
+let text12 = "More than 1000 times";
+let pattern12= /[0-9]/g;
+
+let result12 = text12.match(pattern12);
+
+document.getElementById("demo12").innerHTML = result12;
+</script>
+
+</body>
+</html>
