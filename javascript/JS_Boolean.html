@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Boolean</h1>
+<h2>Use Case: Equality</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x == 8);
+</script>
+
+<h2>Use Case: if .. else</h2>
+
+<p id="demo1"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day!";
+} else {
+  greeting = "Good evening!";
+}
+
+document.getElementById("demo1").innerHTML = greeting;
+</script>
+
+<h2>Use Case: While Loop</h2>
+
+<p id="demo2"></p>
+
+<script>
+let text = "";
+let i = 1;
+
+while (i < 10) {
+  text += i;
+  i++;
+}
+
+document.getElementById("demo2").innerHTML = text;
+</script>
+
+<p>Display the value of Boolean(10 > 9):</p>
+
+<p id="demo3"></p>
+
+<script>
+document.getElementById("demo3").innerHTML = Boolean(10 > 9);
+</script>
+
+<p>Display the value of (10 > 9):</p>
+
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo4").innerHTML = (10 > 9);
+</script>
+
+<p id="demo5"></p>
+
+<script>
+document.getElementById("demo5").innerHTML =
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+'"Hello" is ' + Boolean("Hello") + "<br>" +
+"'false' is " + Boolean('false') + "<br>" +
+"(1 + 7 + 3.14) is " + Boolean(1 + 7 + 3.14);
+</script>
+
+<p>Display the Boolean value of 0:</p>
+
+<p id="demo6"></p>
+
+<script>
+let x1 = 0;
+document.getElementById("demo6").innerHTML = Boolean(x1);
+</script>
+
+<p>Display the Boolean value of  -0:</p>
+
+<p id="demo7"></p>
+
+<script>
+let x2 = -0;
+document.getElementById("demo7").innerHTML = Boolean(x2);
+</script>
+
+<p>Booleans and Boolean objects cannot be safely compared:</p>
+
+<p id="demo8"></p>
+
+<script>
+// x is a boolean
+let a = false;
+
+// y is an object
+let b = new Boolean(false);
+
+document.getElementById("demo8").innerHTML = typeof a + "<br>" + typeof b;
+</script>
+
+<p>Booleans and boolean objects cannot be safely compared:</p>
+
+<p id="demo9"></p>
+
+<script>
+// Create a Boolean
+let c = Boolean(false);
+
+// Create a Boolean Object
+let d = new Boolean(false);
+
+document.getElementById("demo9").innerHTML = (c===d);
+</script>
+
+</body>
+</html>
