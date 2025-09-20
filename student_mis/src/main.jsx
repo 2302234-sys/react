@@ -1,17 +1,10 @@
-
-//import { createRoot } from 'react-dom/client'
-
-//const myElement = <h1>EXAMPLE 1: I Love JSX!</h1>;
-
-//createRoot(document.getElementById('root')).render(
-  //myElement
-//);
-
-import React from 'react';
-import { createRoot, createElement } from 'react-dom/client'
-
-const myElement = React.createElement('h1', {}, ' Example 2: I do not use JSX!');
+import { StrictMode } from "react"
+import { createRoot } from "react-dom/client"
+import './index.css'
+import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
-  myElement
-);
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

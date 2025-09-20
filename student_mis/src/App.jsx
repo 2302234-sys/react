@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const myElement = <h5>Hello World</h5>
 
+  const myElement2 =<h5>The result of 5 +5 is {5 + 5}</h5>
+  
+  const name = "Precious"
+  const age  = 21 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {myElement}
+      {myElement2}
+      <h5>Hello, {name}</h5>
+      <h5>You are {age} years old</h5>
+      <Button/>
     </>
   )
 }
 
+function Button(){
+  return(
+    <>
+    <button>Click Me</button>
+    </>
+  )
+}
 export default App
